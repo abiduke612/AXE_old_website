@@ -1,0 +1,576 @@
+/*!
+ * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+	width: 100%;
+	height: 100%;
+	font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	background-color: #000;
+}
+
+	#loading {
+		display: none;
+		position: absolute;
+		top: 10px;
+		right: 10px;
+	}
+
+	#calendar {
+		max-width: 900px;
+		margin: 0 auto;
+	}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+h1,
+h2 {
+	margin: 0 0 20px;
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+
+
+h3,
+h4 {
+    margin: 0 0 20px;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+h5,
+h6 {
+    margin: 0 0 20px;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+p {
+    margin: 0 0 25px;
+    line-height: 1.5;
+}
+
+@media(min-width:768px) {
+    p {
+	margin: 0 0 35px;
+	font-size: 20px;
+	line-height: 1.6;
+    }
+}
+
+/*color of link before you click it*/
+a {
+    color: #009DA3;
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+/*color of link after you click it*/
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: #D66041;
+}
+
+.text1{
+    color: #262626;
+	font-size: 18px;
+}
+
+.text2{
+    color: #262626;
+    font-size: 20px;
+}
+
+.text_con{
+    color: #3B4E63;
+    font-size: 18px;
+}
+
+.text_add{
+    color: #3B4E63;
+    font-size: 18px;
+}
+
+.text_add_h{
+    color: #3B4E63;
+    font-size: 25px;
+}
+
+.back1{
+	background-color: #FFFFF5;
+	padding-bottom: 70px;
+	padding-top:40px;
+}
+
+.back2{
+    background-color: #C1CBCA;
+	/* padding-bottom: 50px; */
+	padding-top:50px;
+}
+
+footer {
+    padding-top: 0px;
+    padding-bottom: 50px;
+    /* border: 2px dashed black; */
+}
+
+.back3{
+	background-color: #FFFFF5;
+	/* padding-bottom: 70px; */
+	/* padding-top:70px; */
+}
+
+.light {
+    font-weight: 400;
+}
+
+.navbar-custom {
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color: #000;
+}
+
+.navbar-custom .navbar-brand {
+    font-weight: 700;
+}
+
+.navbar-custom .navbar-brand:focus {
+    outline: 0;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle {
+    padding: 4px 6px;
+    font-size: 16px;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle:focus,
+.navbar-custom .navbar-brand .navbar-toggle:active {
+    outline: 0;
+}
+
+/*color of nav bar words*/
+.navbar-custom a {
+    color: #FFFFFA;
+}
+
+.navbar-custom .nav li a {
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+/*color of nav bar words when hovered over*/
+.navbar-custom .nav li a:hover {
+    outline: 0;
+    color: #ffc300;
+    background-color: transparent;
+}
+
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a:active {
+    outline: 0;
+    background-color: transparent;
+}
+
+.navbar-custom .nav li.active {
+    outline: 0;
+}
+
+/*color of nav bar section when active*/
+.navbar-custom .nav li.active a {
+    background-color: #00CCC1;
+}
+
+/*color of words when selected*/
+.navbar-custom .nav li.active a:hover {
+    color: #F7F7EA;
+}
+
+@media(min-width:768px) {
+    .navbar-custom {
+        padding: 20px 0;
+        border-bottom: 0;
+        letter-spacing: 1px;
+        background: 0 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+		
+    }
+
+/*color of whole nav bar */
+    .navbar-custom.top-nav-collapse {
+        padding: 0;
+        border-bottom: 1px solid rgba(255,255,255,.3);
+        background: #000;
+        background-color: #003153;
+    }
+}
+
+/* to update pictures press ctrl f5 when at the website */
+.intro {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: #192E38;
+    background: url(../img/skyflask-bg-half.JPG) no-repeat bottom center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.intro .intro-body {
+    display: table-cell;
+    vertical-align: middle;
+	margin-top: 20px;
+}
+
+/*changes front header color, i.e., Alpha Chi Sigma*/
+.intro .intro-body .brand-heading {
+    color: #FFFFF5;
+    
+}
+
+/*changes 2nd front header color and size, i.e., Alpha Beta*/
+.brand-sub-heading {
+	font-size: 28px;
+    color: #FFFFF5;
+
+   
+}
+
+/*THIRD LINE when small*/
+.intro .intro-body .intro-text {
+    font-size: 15px;
+    color: #FFFFF5;
+    
+}
+
+.about{
+	width: 100%;
+	padding-bottom: 100px;
+    color: #fff;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
+}
+
+@media(max-width:1000px) {
+    .carousel {
+	height: 50%;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+    
+}
+
+.item,
+.active,
+.carousel-inner {
+    height: 100%;
+	
+}
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+	background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.about-text{
+	color: #333030;
+	
+}
+
+.brand-heading{
+	font-size: 40px;
+}
+
+.centr{
+	padding-left: 50px;
+	padding-right: 50px;
+	
+	
+}
+
+@media(min-width:768px) {
+    .intro {
+	height: 100%;
+	padding: 0;
+	/* [disabled]background-color: #FFF; */
+	padding-bottom: 2in;
+    }
+
+    .intro .intro-body .brand-heading {
+	font-size: 80px;
+    }
+
+    /*THIRD-LINE big*/
+    .intro .intro-body .intro-text {
+	font-size: 18px;
+    color: #FFFFF5;
+    }
+}
+
+.btn-circle {
+    width: 70px;
+    height: 70px;
+    margin-top: 15px;
+    padding: 7px 16px;
+    border: 2px solid #fff;
+    border-radius: 100%!important;
+    font-size: 40px;
+    color: #fff;
+    background: 0 0;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.btn-circle:hover,
+.btn-circle:focus {
+    outline: 0;
+    color: #fff;
+    background: rgba(255,255,255,.1);
+}
+
+.btn-circle i.animated {
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;
+}
+
+.btn-circle:hover i.animated {
+    -webkit-animation-name: pulse;
+    -moz-animation-name: pulse;
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+}
+
+@-webkit-keyframes pulse {    
+    0 {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@-moz-keyframes pulse {    
+    0 {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -moz-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+
+.three{
+	padding-bottom: 100px;
+}
+
+/*objective header*/
+.three_h{
+	font-size: 23px;
+    color: 	#D66041;
+	font-weight: 700;
+	font-family:  Lora, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*red #D66041*/
+.content-section {
+    padding-top: 100px;
+}
+
+.download-section {
+    width: 100%;
+    padding: 50px 0;
+    color: #fff;
+    background: url(../img/skyflask2-bg-half.jpg) no-repeat center center scroll;
+	display: block;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+#map {
+    width: 100%;
+    height: 200px;
+    margin-top: 100px;
+}
+
+@media(min-width:767px) {
+    .content-section {
+	padding-top: 100px;
+    }
+
+    .download-section {
+        padding: 100px 0;
+    }
+
+    #map {
+	height: 400px;
+	margin-top: 40px;
+    }
+}
+
+.backgroundadded{
+	background-color: #FFF;	
+	
+}
+
+.btn {
+    border-radius: 0;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.btn-default {
+    border: 1px solid #009DA3;
+    color:  #262626;
+    background-color: transparent;
+}
+
+.btn-default:hover,
+.btn-default:focus {
+    border: 1px solid #00AD9A;
+	outline: 0;
+	color: #000;
+	background-color: #C1CBCA;
+}
+
+ul.banner-social-buttons {
+    margin-top: 0;
+}
+
+@media(max-width:1199px) {
+    ul.banner-social-buttons {
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:767px) {
+    ul.banner-social-buttons li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.banner-social-buttons li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+footer {
+    /* padding: 50px 0; */
+	background-color: #C1CBCA;
+}
+
+footer p {
+    margin: 0;
+}
+
+::-moz-selection {
+    text-shadow: none;
+    background: #fcfcfc;
+    background: rgba(255,255,255,.2);
+}
+
+::selection {
+    text-shadow: none;
+    background: #fcfcfc;
+    background: rgba(255,255,255,.2);
+}
+
+img::selection {
+    background: 0 0;
+}
+
+img::-moz-selection {
+    background: 0 0;
+}
+
+body {
+    webkit-tap-highlight-color: rgba(255,255,255,.2);
+		background-color: #262626;
+}
+
+.carousel-inner {
+    width: 100%;
+    height: 600px !important;
+    overflow: hidden;
+}
+
+#myCarousel {
+   height: auto;
+}
+
+/* #alpha_id {
+    border: 3px black solid;
+    border-radius: 10%;
+    background-color: white;
+    opacity: 0.2;
+}
+
+#alpha_id img {
+    opacity: 1;
+}
+
+#alpha_id h3 {
+    color: black;
+} */
+
